@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_row="1"
+    android:layout_rowSpan="1"
+    android:layout_column="0"
+    android:layout_columnSpan="1"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="734dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            app:columnCount="3"
+            app:rowCount="2">
+
+            <ImageView
+                android:id="@+id/teamid00"
+                android:layout_width="124dp"
+                android:layout_height="125dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="0"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/suuny"
+                tools:srcCompat="@drawable/suuny" />
+
+            <ImageView
+                android:id="@+id/teamid01"
+                android:layout_width="127dp"
+                android:layout_height="124dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/chevrolet_zl1"
+                tools:srcCompat="@drawable/chevrolet_zl1" />
+
+            <ImageView
+                android:id="@+id/teamid02"
+                android:layout_width="127dp"
+                android:layout_height="125dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="2"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@android:drawable/btn_star_big_off"
+                tools:srcCompat="@android:drawable/btn_star_big_off" />
+
+            <ImageView
+                android:id="@+id/teamid03"
+                android:layout_width="121dp"
+                android:layout_height="123dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="0"
+                app:layout_row="1"
+                app:srcCompat="@drawable/rainy_day"
+                tools:srcCompat="@drawable/rainy_day" />
+
+            <ImageView
+                android:id="@+id/teamid04"
+                android:layout_width="124dp"
+                android:layout_height="128dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@android:drawable/ic_input_add"
+                tools:srcCompat="@android:drawable/ic_input_add" />
+
+            <ImageView
+                android:id="@+id/teamid05"
+                android:layout_width="126dp"
+                android:layout_height="127dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="2"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                tools:srcCompat="@android:drawable/btn_star_big_on" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="380dp"
+            android:layout_height="67dp"
+            android:text="Load From Phone"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
